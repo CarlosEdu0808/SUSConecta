@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<title>SusConecta</title>
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family: Arial, sans-serif;
+}
+
+body{
+  display:flex;
+  background:#f5f6f8;
+}
+
+/* Sidebar */
+.sidebar{
+  width:220px;
+  background:#163a5f;
+  color:#fff;
+  height:100vh;
+  padding:20px;
+}
+
+.logo{
+  font-weight:bold;
+  margin-bottom:20px;
+}
+
+.menu a{
+  display:block;
+  color:#cbd5e1;
+  text-decoration:none;
+  padding:10px;
+  border-radius:8px;
+  margin-bottom:8px;
+}
+
+.menu a.active, .menu a:hover{
+  background:#1e4a75;
+  color:#fff;
+}
+
+.user{
+  position:absolute;
+  bottom:20px;
+}
+
+/* Main */
+.main{
+  flex:1;
+  padding:30px;
+}
+
+.header{
+  margin-bottom:20px;
+}
+
+.cards{
+  display:flex;
+  gap:15px;
+  margin-bottom:20px;
+}
+
+.card{
+  background:#fff;
+  padding:15px;
+  border-radius:10px;
+  flex:1;
+  box-shadow:0 2px 5px rgba(0,0,0,0.05);
+}
+
+.events{
+  margin-bottom:20px;
+}
+
+.event{
+  background:#fff;
+  padding:15px;
+  border-radius:10px;
+  margin-bottom:10px;
+  box-shadow:0 2px 5px rgba(0,0,0,0.05);
+}
+
+/* CTA */
+.cta{
+  background:#1e4a75;
+  color:#fff;
+  padding:20px;
+  border-radius:12px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+
+.cta button{
+  background:#22c55e;
+  border:none;
+  padding:10px 15px;
+  border-radius:8px;
+  color:#fff;
+  cursor:pointer;
+}
+</style>
+</head>
+
+<body>
+
+<div class="sidebar">
+  <div class="logo">SusConecta</div>
+
+  <div class="menu">
+    <a href="#" class="active">Início</a>
+    <a href="#">Laudos</a>
+    <a href="#">Consultas</a>
+    <a href="#">Medicamentos</a>
+    <a href="#">Encomendar</a>
+    <a href="#">Unidades Próximas</a>
+  </div>
+
+  <div class="user">
+    João Pedro <br><small>Paciente</small>
+  </div>
+</div>
+
+<div class="main">
+
+  <div class="header">
+    <h2>Olá, João Pedro</h2>
+    <p>Acompanhe sua saúde de qualquer lugar</p>
+  </div>
+
+  <div class="cards">
+    <div class="card"><b>3</b><br>Laudos</div>
+    <div class="card"><b>2</b><br>Consultas</div>
+    <div class="card"><b>5</b><br>Remédios</div>
+    <div class="card"><b>4</b><br>Unidades</div>
+  </div>
+
+  <div class="events">
+    <h3>Próximos Eventos</h3>
+
+    <div class="event">
+      Dr. Ana Silva - Cardiologia <br>
+      <small>25 Mar, 14:00</small>
+    </div>
+
+    <div class="event">
+      Losartana 50mg - Tomar agora <br>
+      <small>Hoje, 08:00</small>
+    </div>
+
+    <div class="event">
+      Dra. Maria Santos - Clínico Geral <br>
+      <small>02 Abr, 10:30</small>
+    </div>
+  </div>
+
+  <div class="cta">
+    <div>
+      <b>Precisa de remédios?</b><br>
+      Encomende do posto mais próximo
+    </div>
+    <button>Encomendar</button>
+  </div>
+
+</div>
+
+</body>
+</html>
